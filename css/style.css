@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Fraunces:ital,wght@0,900;1,700&display=swap');
+body{
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --background-white: hsl(22, 65%, 97%);
+    --white: hsl(0, 0%, 100%);
+
+    font-size:18px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Barlow', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.navbar{
+    padding: 1em .5em;
+}
+
+.navbar-toggler{
+    border:none;
+}
+
+.navbar-toggler-icon{
+    background-image:url(../images/icon-hamburger.svg) no-repeat center!important;
+}
+
+.nav-link{
+    color:var(--background-white)!important;
+    margin-right: 1em;
+}
+
+.navbar-brand{
+    color:var(--background-white)!important;
+    font-size:1.5em;
+    font-weight: 700!important;
+}
+
+.navbar-nav{
+    margin-left: 50%;
+    margin-right:auto;
+    width:100%;
+    justify-content: flex-end;
+}
+
+#btn-contact{
+    background: var(--background-white);
+    border-radius: 2em;
+    padding: .75em 1.5em;
+    font-family: 'Fraunces', sans-serif;
+    color: var(--very-dark-grayish-blue)!important;
+    font-size: .9em;
+}
+
+header{
+    background: url(../images/mobile/image-header.jpg) no-repeat center center;
+    background-size: cover;
+    height: 30em;
+    color: var(--background-white);
+    text-align: center;
+}
+
+#header-title{
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: .3em;
+    font-weight: 500;
+    margin-top: 1em;
+    font-family: "Fraunces", serif;
+}
+
+.img-about-section{
+    width: 100%;
+    object-fit: contain;
+}
+
+.text-section{
+    padding:4em 1.5em;
+    text-align: center;
+    background:var(--background-white);
+}
+
+.text-section > h1 {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 900;
+    font-size: 1.75em;
+    margin-bottom: 1em;
+    font-family: "Fraunces", serif;
+}
+
+.text-section > p {
+    color: var(--very-dark-grayish-blue);
+    font-family: "Barlow", serif;
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 2.5em;
+}
+
+.text-section > a {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 900;
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-family: "Fraunces", serif;
+}
+
+.transform-text > a {
+    box-shadow: 0px 4px 3px -1px var(--yellow);
+}
+
+.stand-out-text > a {
+    box-shadow: 0px 4px 3px -1px var(--soft-red);
+}
+
+.graphic-design-section{
+    background: url("../images/mobile/image-graphic-design.jpg") no-repeat center center;
+    background-size: cover;
+    height: 35em;
+    text-align: center;
+}
+
+.graphic-design-section > h1 {
+    color: var(--dark-desaturated-cyan);
+    font-weight: 900;
+    font-size: 1.5em;
+    font-family: "Fraunces", serif;
+    padding: 16em 2em 1em 2em;
+}
+
+.graphic-design-section > p {
+    color: var(--dark-desaturated-cyan);
+    font-family: "Barlow", serif;
+    font-weight: 700;
+    font-size: .9em;
+    padding:0 .25em;
+}
+
+.photography-section{
+    background: url("../images/mobile/image-photography.jpg") no-repeat center center;
+    background-size: cover;
+    height: 35em;
+    text-align: center;
+}
+
+.photography-section > h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1.5em;
+    font-family: "Fraunces", serif;
+    padding: 16em 2em 1em 2em;
+}
+
+.photography-section > p {
+    color: var(--dark-blue);
+    font-family: "Barlow", serif;
+    font-weight: 700;
+    font-size: .9em;
+    padding:0 .25em;
+}
+
+#testimonials-section{
+    background: var(--background-white);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#testimonials-section > h1{
+    color: var(--grayish-blue);
+    font-weight: 900;
+    letter-spacing: .2em;
+    font-family: "Fraunces", serif;
+    font-size: .9em;
+}
+
+.testimonial-card{
+    text-align: center;
+    margin-bottom:2em;
+}
+
+.testimonial-card > img{
+    text-align: center;
+    border-radius: 100%;
+    width: 4em;
+    height: 4em;
+    margin: 3em 0;
+}
+
+.testimonial-card > p {
+    color: var(--dark-grayish-blue);
+    font-family: "Barlow", sans-serif;
+    font-size: .9em;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px){
+    header{
+        background: url(../images/desktop/image-header.jpg) no-repeat center center;
+        background-size: cover;
+        height: 45em;
+    }
+
+    .navbar{
+        padding: 2em 2em;
+    }
+
+    .navbar-brand{
+        color:var(--white)!important;
+        font-size:2em;
+        font-weight: 700!important;
+    }
+
+    #header-title{
+        text-transform: uppercase;
+        font-size: 3em;
+        letter-spacing: .3em;
+        font-weight: 500;
+        margin-top: 1em;
+        font-family: "Fraunces", serif;
+    }
+
+    .nav-link{
+        margin-right: 2em;
+    }
+
+    .text-section{
+        padding:8em 5.25em 8em 10em;
+        text-align: left;
+    }
+
+    .stand-out-section > .text-section{
+        padding: 9em;
+        padding-bottom:0;
+    }
+
+    .text-section > h1{
+        font-size: 2.5em;
+        font-weight: 900;
+    }
+
+    .graphic-design-section{
+        background: url("../images/desktop/image-graphic-design.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    
+    
+    .graphic-design-section > p {
+        padding:0 10em;
+    }
+    
+    .photography-section{
+        background: url("../images/desktop/image-photography.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    
+    
+    .photography-section > p {
+        padding:0 10em;
+    }
+    
+    
+    
+}
