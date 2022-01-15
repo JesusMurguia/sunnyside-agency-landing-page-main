@@ -3,38 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="https://kit.fontawesome.com/dd32a28c77.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="./css/style.css" rel="stylesheet">
+  <script src="./js/index.js"></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">sunnyside</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about-section">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#services-section">Services</a>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#projects-section">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a id="btn-contact" class="nav-link active" aria-current="page" href="#contact-section">CONTACT</a>
-              </li>
-            </li>
-          </ul>
-        </div>
+    <div class="row pt-4 ps-4">
+      <div class="col-2">
+        <a href="#" id="navbar-brand" class="navbar-brand">sunnyside</a>
       </div>
-    </nav>
+      <div class="col-10 d-flex justify-content-end align-items-center nav-desktop">
+        <a href="#about-section" class="nav-link">About</a>
+        <a href="#services-section" class="nav-link">Services</a>
+        <a href="#testimonials-section" class="nav-link">Contact</a>
+        <a id="btn-contact" class="nav-link active" aria-current="page" href="#contact-section">CONTACT</a>
+      </div>
+      <div class="col-10 d-flex justify-content-end align-items-center nav-mobile">
+        <button id="mobile-menu-btn"></button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu d-flex hidden">
+        <a href="#about-section" class="nav-link">About</a>
+        <a href="#services-section" class="nav-link">Services</a>
+        <a href="#testimonials-section" class="nav-link">Contact</a>
+        <a id="btn-contact-mobile" class="nav-link active btn-mobile" aria-current="page" href="#contact-section">CONTACT</a>
+      </div>
+    </div>
     <div class="row">
       <div class="col-12 mb-5 mt-3">
         <h1 id="header-title">We are creatives</h1>
@@ -48,7 +45,7 @@
     <div id="about-section">
       <div class="row transform-section">
         <div class="col-12 col-md-6 order-last p-0">
-          <img src="./images/mobile/image-transform.jpg" alt="transform" class="img-fluid img-transform  img-about-section">
+          <img id="img-transform" src="./images/mobile/image-transform.jpg" alt="transform" class="img-fluid img-transform  img-about-section">
         </div>
         <div class="col-12 col-md-6 order-last order-md-first transform-text text-section">
             <h1>Transform your brand</h1>
@@ -81,6 +78,11 @@
     </div>
     <div id="testimonials-section">
       <div class="row">
+        <div class="col-12">
+          <h1>CLIENT TESTIMONIALS</h1>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-12 col-md-4 testimonial-card">
           <img src="./images/image-emily.jpg" alt="emily" class="testimonial-img img-fluid">
           <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
@@ -101,6 +103,40 @@
         </div>
       </div>
     </div>
+    <div id="images-section">
+      <div class="row">
+        <div class="col-6 col-md-3 p-0">
+          <img id="milk" alt="milk bottles" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img id="orange" alt="orange" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img id="cone" alt="cone" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img id="cubes"  alt="sugar cubes" class="img-fluid">
+        </div>
+      </div>
+    </div>
   </main>
+  <footer>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>sunnyside</h1>
+            <a href="#about-section" class="me-5">About</a>
+            <a href="#services-section" >Services</a>
+            <a href="#testimonials-section" class="ms-5">Projects</a>
+
+            <div class="contact-section mt-5">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
